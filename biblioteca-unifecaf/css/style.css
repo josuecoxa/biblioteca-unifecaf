@@ -1,0 +1,394 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 15px 40px;
+}
+
+.logo img {
+    height: 75px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+}
+
+#sobre {
+    padding: 50px 40px;
+    background-color: #333;
+}
+
+#sobre h2 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    font-size: 26px;
+}
+
+.sobre-conteudo {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto p {
+    font-size: 17px;
+    color: #ddd;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.sobre-imagem-central {
+    flex: 1;
+}
+
+.sobre-imagem-central img {
+    width: 100%;
+    height: auto;
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.sobre-galeria {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.sobre-galeria img {
+    width: 23%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.banner-secundario {
+    width: 100%;
+    height: 220px;
+    background-image: url('../assets/imagens/banner3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#livros {
+    padding: 50px 40px;
+    background-color: #444;
+}
+
+#livros h2 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+    font-size: 26px;
+}
+
+.grid-livros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.card-livro {
+    background-color: #e0e0e0;
+    color: #000;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-livro h3 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.card-livro img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    background-color: #888;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.card-livro p {
+    font-size: 15px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.btn-saiba-mais {
+    background-color: #888;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: auto;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#unidades {
+    padding: 50px 40px;
+    background-color: #111;
+}
+
+#unidades h2 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+    font-size: 26px;
+}
+
+.lista-unidades {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.item-unidade {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.item-unidade img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.unidade-texto {
+    flex: 1;
+}
+
+.unidade-texto h3 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+.unidade-texto p {
+    font-size: 17px;
+    color: #ccc;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+#contato {
+    padding: 50px 40px;
+    background-color: #ccc;
+    color: #111;
+}
+
+#contato h2 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    font-size: 26px;
+}
+
+.contato-conteudo {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.contato-texto {
+    flex: 2;
+}
+
+.contato-texto p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.info-contatos {
+    background-color: #bbb;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.info-contatos p {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.contato-imagem {
+    flex: 1;
+}
+
+.contato-imagem img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    background-color: #999;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #b3b3b3;
+    color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    font-size: 16px;
+}
+
+.rodape-logo img {
+    height: 75px;
+    width: auto;
+}
+
+.destaque {
+    font-weight: 700;
+    color: #0056b3;
+    font-size: 17px;
+}
+
+.btn-topo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.2s;
+    z-index: 1000;
+}
+
+.btn-topo:hover {
+    background-color: #004494;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 900px) {
+    .grid-livros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .sobre-galeria img {
+        height: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .sobre-conteudo {
+        flex-direction: column;
+    }
+
+    .sobre-galeria {
+        flex-wrap: wrap;
+    }
+
+    .sobre-galeria img {
+        width: 48%;
+        margin-bottom: 10px;
+        height: 160px;
+    }
+
+    .grid-livros {
+        grid-template-columns: 1fr;
+    }
+
+    .item-unidade {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .item-unidade img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contato-conteudo {
+        flex-direction: column;
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
